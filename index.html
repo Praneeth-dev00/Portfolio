@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Name - Portfolio Website">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
+  <style>
+    /* Inline CSS for basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #007acc;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Name</h1>
+  <p>Welcome to my portfolio website!</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>Hello! I'm [Your Name], a [Your Profession or Title]. I specialize in [Your Skills or Expertise]. Welcome to my portfolio!</p>
+
+  <h2>Projects</h2>
+  <ul>
+    <li><a href="https://github.com/yourusername/project1" target="_blank">Project One</a> - A brief description of the project.</li>
+    <li><a href="https://github.com/yourusername/project2" target="_blank">Project Two</a> - A brief description of the project.</li>
+    <li><a href="https://github.com/yourusername/project3" target="_blank">Project Three</a> - A brief description of the project.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>You can reach me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
+</section>
+
+<footer>
+  &copy; <span id="year"></span> Your Name. All rights reserved.
+</footer>
+
+<script>
+  // Dynamically update the year in the footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
