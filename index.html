@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Your Name - Portfolio Website">
-  <title>Your Name | Portfolio</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to a CSS file -->
-  <style>
-    /* Inline CSS for basic styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background-color: #007acc;
-      color: white;
-      padding: 20px 10px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #007acc;
-      color: white;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya Dhanala - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+        }
+        h1, h2, h3 {
+            color: #444;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .contact-info, .skills, .experience, .education {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Shreya Dhanala</h1>
+            <p><strong>Contact:</strong> (901)-658-7647 | <strong>Email:</strong> dhanalashreya2@gmail.com</p>
+        </header>
 
-<header>
-  <h1>Your Name</h1>
-  <p>Welcome to my portfolio website!</p>
-</header>
+        <section class="summary section">
+            <h2>Summary</h2>
+            <p>Expertise in analyzing, designing, developing, testing, and deploying Web and Enterprise applications using Java/J2EE technologies. Skilled in building and testing RESTful Web APIs with Spring Boot and Postman. Proficient in front-end development using React and dynamic UI creation. Extensive experience with AWS and Azure cloud services, microservices architecture, and CI/CD pipelines.</p>
+        </section>
 
-<section>
-  <h2>About Me</h2>
-  <p>Hello! I'm [Your Name], a [Your Profession or Title]. I specialize in [Your Skills or Expertise]. Welcome to my portfolio!</p>
+        <section class="skills section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Java/J2EE, Spring Boot, Hibernate ORM</li>
+                <li>RESTful APIs, SOAP, Microservices</li>
+                <li>React.js, Angular, HTML5, CSS3</li>
+                <li>AWS (EC2, S3, Lambda), Azure (VMs, AKS)</li>
+                <li>Docker, Kubernetes, Jenkins</li>
+                <li>MySQL, PostgreSQL, MongoDB</li>
+                <li>CI/CD Pipelines, Agile Methodologies</li>
+                <li>UML Modeling, Design Patterns (Factory, Singleton)</li>
+            </ul>
+        </section>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/yourusername/project1" target="_blank">Project One</a> - A brief description of the project.</li>
-    <li><a href="https://github.com/yourusername/project2" target="_blank">Project Two</a> - A brief description of the project.</li>
-    <li><a href="https://github.com/yourusername/project3" target="_blank">Project Three</a> - A brief description of the project.</li>
-  </ul>
+        <section class="experience section">
+            <h2>Professional Experience</h2>
 
-  <h2>Contact</h2>
-  <p>You can reach me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
-</section>
+            <div class="job">
+                <h3>Full Stack Developer - FedEx | Memphis, TN (Apr 2024 - Present)</h3>
+                <ul>
+                    <li>Developed RESTful APIs and services using Spring Boot for e-commerce functionalities.</li>
+                    <li>Designed MongoDB schemas for scalable healthcare applications.</li>
+                    <li>Integrated AWS services like EC2 and S3 for cloud-native infrastructure.</li>
+                    <li>Built responsive UIs using React.js and TypeScript.</li>
+                    <li>Implemented CI/CD pipelines with Jenkins for automated deployments.</li>
+                </ul>
+            </div>
 
-<footer>
-  &copy; <span id="year"></span> Your Name. All rights reserved.
-</footer>
+            <!-- Add other job experiences similarly -->
+            
+        </section>
 
-<script>
-  // Dynamically update the year in the footer
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+        <section class="education section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Master of Science:</strong> Computer Science - University of Memphis | Memphis, TN</li>
+                <li><strong>Bachelor of Engineering:</strong> Computer Science - Vardhaman College of Engineering | Hyderabad, India</li>
+            </ul>
+        </section>
 
+    </div>
 </body>
 </html>
